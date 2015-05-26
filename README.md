@@ -34,7 +34,7 @@ Goal:  Host `pick4country.Rmd` to Github repository. [Original Directory](https:
 ## Resources
 
 [Github GUI Guide (Mac)](https://mac.github.com/help.html)
-[Github GUI Guide (Windows)][https://windows.github.com/help.html]
+[Github GUI Guide (Windows)](https://windows.github.com/help.html)
 [Bitbucket](https://bitbucket.org/) - alternative to Github hosting. Unlimited free 
 
 ### Repositories to practice pushing and pulling
