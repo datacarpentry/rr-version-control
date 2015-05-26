@@ -33,24 +33,25 @@ Goal:  Host `pick4country.Rmd` to Github repository. [Original Directory](https:
 
 ## Resources
 
-[Github GUI Guide (Mac)](https://mac.github.com/help.html)
-[Github GUI Guide (Windows)](https://windows.github.com/help.html)
-[Bitbucket](https://bitbucket.org/) - alternative to Github hosting. Unlimited free 
+-   [Github GUI Guide (Mac)](https://mac.github.com/help.html)
+-   [Github GUI Guide (Windows)](https://windows.github.com/help.html)
+-   [Bitbucket](https://bitbucket.org/) - alternative to Github hosting. Unlimited free 
 
 ### Repositories to practice pushing and pulling
 
-[https://github.com/grayghostvisuals/Practice-Git](https://github.com/grayghostvisuals/Practice-Git)
-[https://github.com/TheCodingCollective/quotes](https://github.com/grayghostvisuals/Practice-Git)
-[https://bitbucket.org/tutorials/tutorials.bitbucket.org](https://github.com/grayghostvisuals/Practice-Git)
+-   [https://github.com/grayghostvisuals/Practice-Git](https://github.com/grayghostvisuals/Practice-Git)
+-   [https://github.com/TheCodingCollective/quotes](https://github.com/grayghostvisuals/Practice-Git)
+-   [https://bitbucket.org/tutorials/tutorials.bitbucket.org](https://github.com/grayghostvisuals/Practice-Git)
  
 ### Examples of code from research papers on Github
 
-[https://github.com/tessington/PNASForageFish](https://github.com/tessington/PNASForageFish)
-[https://github.com/seananderson/paleobaselines/](https://github.com/seananderson/paleobaselines/)
+-   [https://github.com/tessington/PNASForageFish](https://github.com/tessington/PNASForageFish)
+-   [https://github.com/seananderson/paleobaselines/](https://github.com/seananderson/paleobaselines/)
 
 ### Best Practices
-[Nice Overview of Best Practices](https://sethrobertson.github.io/GitBestPractices/)
-[Git Flow CheatSheet](http://danielkummer.github.io/git-flow-cheatsheet/)
+
+-   [Nice Overview of Best Practices](https://sethrobertson.github.io/GitBestPractices/)
+-   [Git Flow CheatSheet](http://danielkummer.github.io/git-flow-cheatsheet/)
 
 
 
