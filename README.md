@@ -2,8 +2,8 @@
 
 **Concepts and tutorial, in part, remixed from**
 
-[Software Carpentry Git Novice Lesson](http://swcarpentry.github.io/git-novice/)
-[Jenny's Test Drive R Markdown Lesson](http://stat545-ubc.github.io/block007_first-use-rmarkdown.html)
+- [Software Carpentry Git Novice Lesson](http://swcarpentry.github.io/git-novice/)
+- [Jenny's Test Drive R Markdown Lesson](http://stat545-ubc.github.io/block007_first-use-rmarkdown.html)
 
 ##Learning Objectives
 
