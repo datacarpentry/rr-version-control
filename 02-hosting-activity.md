@@ -1,44 +1,77 @@
 # Version Control via Git and Github
 
-Before this lesson:
+**Before this lesson**:
 
--  Obtain a Github account. If you sign up using a student email you get five free private repositories through a [student developer pack](https://education.github.com/pack).
+-  Obtain a Github account. If you sign up using a student email you get five free private repositories through the [student developer pack](https://education.github.com/pack).
 - Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com). 
 
 After this lesson, you should be able to:
 
-## Learning Objectives
-
-- Define version control as a way to save 
-- Recognize the difference between Git and hosting Git 
-- Benefits of Git (working alone)
-- Benefits of Git (collaboration) 
-- Locate further resources for understanding best practices of Git
-
-## Lesson Plan Outline
-
-Goal:  Host `pick4country.Rmd` to Github repository. [Original Directory](https://github.com/Reproducible-Science-Curriculum/rr-organization1/tree/master/files/lit-prog)
-
-Let's start by sharing the changes we've made to a directory we are familiar with: `lit-prog`.  Now that we made a beautiful Rmarkdown document, its time to host it on Github.  The reasons you host remotely, on a server like Github is to 
-1. Back-up your work
-2. Share work for easy collaboration
-3. Show the world. 
+*   Initiate Git in a project directory.
+*   
+*   Push to or pull from a remote repository.
+*   Clone a remote repository.
 
 ## Activity
 
-Let's get started 
-Log in to GitHub, then click on the icon in the top right corner to create a new repository and name it lit-prog-firstName-lastName.
+**Goal**: to host the beautiful Rmarkdown document, `countryPick4.Rmd`, on github. Find the folder named `lit-prog` which was downloaded yesterday for the Organization lesson. 
 
-![Creating a Repository on GitHub (Step 1)](fig/github-create-repo-01.png)
+*tip*: With Git comes many strong opinions on the best practices of how to use Git, which can seem very intimidating. The truth is Git can be really straight forward to use and best practices only really develop while using it. This tutorial will strive to show you Git as simply as possible, while guiding you where to further learn more about best practices. 
 
-Name your repository "planets" and then click "Create Repository":
+### Part 1: Initiate Git in the `lit-prog` directory
 
-![Creating a Repository on GitHub (Step 2)](fig/github-create-repo-02.png)
+1. Find your `lit-prog` directory. Know where it is.
+2. Open the GitHub GUI.  Click the `+` in the top left corner of the screen, choose `add`, and either enter the path to the `lit-prog` or click `choose` to find the folder on your computer.  To complete click `create and add repository`.
+
+![Initiating Git](fig/git-GUI-01.png)
+
+Now you have initiated Git into that directory you have created a `Git repository`, which is a folder or directory that is now being tracked by Git software. 
+
+### Part 2: Commit 
+
+At this point we have just initiated Git.  You can see in the "History" tab that this repository has no history.  History only begins by making a **commit**.  Git is all about composing and saving snapshots of your project and then working with and comparing those snapshots. A commit is taking a snapshot, while attaching a little note to help you navigate to why that instance of the project is important.  
+
+Let's go ahead and make a commit. All you have to do is add a message that describes your commit and press "Commit to master". 
+
+![Commit](fig/git-GUI-02.png)
+
+Now if you see that "Changes" tab is blank and if you look at "History", you can view your first commit. 
+
+*tip*: There are many beliefs on best practices of committing.  The best advice is: Commit early and often. Then strive to describe your commit concisely, but with meaning. You want to be able to understand exactly what point of the project you are in months from now. 
+
+### Part 3: Changing files
+
+Open up the `countryPick4.Rmd` and add your name to the YMAL front matter at the top of the document, then Save.
+
+    ---
+    title: "Pick four - comparing trends in population  over time"
+    output: pdf_document
+    Author: Ciera Martinez
+    ---
+
+Now if you look at the "Changes" tab you can see that the line I added is clearly displayed in green.  You may also notice that that is all there is, since I did not change anything else. 
+
+![Viewing Changes](fig/git-GUI-03.png)
+
+Go ahead and commit this change.
+
+###Summary 
+
+
+## Push to Github
+
+Log in to GitHub, then click on the icon in the top right corner to create a new repository and 
+
+![Creating a Repository on GitHub](fig/github-create-repo-01.png)
+
+name it `lit-prog-firstName-lastName`. For example, `lit-prog-ciera-martinez`. Then click "Create Repository".
+
+![Creating a Repository on GitHub](fig/github-create-repo-02.png)
 
 As soon as the repository is created,
 GitHub displays a page with a URL and some information on how to configure your local repository:
 
-![Creating a Repository on GitHub (Step 3)](fig/github-create-repo-03.png)
+![Creating a Repository on GitHub](fig/github-create-repo-03.png)
 
 The next step is to connect the two repositories. We do this by making the GitHub repository a remote for the local repository. The home page of the repository on GitHub includes the string we need to identify it:
 
