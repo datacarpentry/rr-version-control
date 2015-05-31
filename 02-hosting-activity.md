@@ -59,13 +59,21 @@ Now if you look at the "Changes" tab you can see that the line I added is clearl
 
 Go ahead and commit this change.
 
-**On your own**: Update the `countryPick4.Rmd` with the date and commit this change.
+### **On your own**: 
+
+Update the `countryPick4.Rmd` with the date and commit this change.
+
     ---
     title: "Pick four - comparing trends in population  over time"
     output: pdf_document
     Author: Ciera Martinez
     Date: June 2, 2015
     ---
+
+Add your name to the top of the `README.md` file content and commit this change.
+
+    #Files for the Literate Programming lesson
+    *Modified by Ciera Martinez*
 
 ### I. Part 4: "Rolling Back" into the past (`git reset`)
 
@@ -77,7 +85,7 @@ You can rollback to a single commit by clicking on the commit you would like to 
 
 Try rolling back to your first commit and viewing your `countryPick4.Rmd` file.  You can see that that file is now in the state when you made your first commit. 
 
-Rolling back will leave the original commit in the repository's history, so you can always revert a revert if necessary and never lose any commits.  Do this on your "Added Date Line" commit to get back to where we were. Your directory should look like this:
+Rolling back will leave the original commit in the repository's history, so you can always revert a revert if necessary and never lose any commits.  Do this on your "Added Date Line" commit to get back to where we were by "Rolling back" to the commit where you added your name to `README.md`.
 
 **Tip:** If you are going to use the Github GUI, only use the Rollback option, don't use revert. Things can get really confusing fast. I highly recommend messing around with it further on a folder you are not concerned with or begin using command line git to have more control.  Also, there is an "undo" option in the "changes" tab if your git history gets confusing, but there is a general rule to never rewrite your git history *especially* if you are collaborating or have already published/hosted your code on-line. 
 
@@ -114,11 +122,85 @@ The home page of the repository on GitHub includes the string we need to identif
 
 If you go back to your browser and press refresh, all your files should be there on Github!  
 
-## III. Collaborating 
+## II. Part 3: Cloning Others Repos (`git clone`) and Collaborating 
 
-The purpose of 
+One of the most powerful aspects of using git is for multiple people to work on a single project together. Many of you may be aware of the struggles of emailing many drafts of a single document to people on your team. By the time you get back edits from one person, the document from the other is already outdated. While these types of problems can be overcome using a service like Google Drive, on a project with multiple files, organization becomes confusing fast. 
 
-###Introduction to best practices and troubleshooting (Lecture-ish) (Branching, Dev. branch, CONTRIBUTING.md, Workflows, Conflicts, ect.)
+*tip*: Best practices for collaborating through Git vary widely.  If you want to start contributing to a Git repository, often times you can find rules for in a file called `CONTRIBUTING.md`.  
+
+A brief outline of how many people collaborate on Github:
+
+1.  Get a copy of a project by `fork`ing the original repository to your remote server. 
+2.  `clone` your forked repository locally. 
+3.  Make any changes. Commit changes.
+4.  "Publish" / `push`changes to your remote server.
+5.  Ask to merge your changes to the original project by creating a pull request.
+6.  Owner of the original repository checks your changes and merges your changes into the repository by accepting the pull request.
+
+### II. Part 4: Forking a repository
+
+For this exercise, team up with one other person. You will be making changes to their newly created `lit-prog-your-name` repository and they will be making changes to yours. First find your partners repository by searching for their @name in the search bar at the top left of your Github home page. Click on their `lit-prog` repository.
+
+![Finding Repository](fig/git-GUI-06.png)
+
+Once there click the "fork" button on the top left of the screen.
+
+![Finding Repository](fig/git-GUI-07.png)
+
+Once you have your own copy, copy the 
+
+Now you should have your own version of your partners repository to do whatever you want with it!  You can do this with anyone's public project. This is how easy knowledge is spread and built upon is spread.   You can even fork your own version of [ggplot2](https://github.com/hadley/ggplot2), the entire program, you can go back into the history of every hosted project and see how it was built. Github even has a lot of cool tools to visualize the history.  For example check out the history of how yesterday's [Organization lesson](https://github.com/Reproducible-Science-Curriculum/rr-organization1/network).  So now that we have our own copy, let's contribute to your partners project project.
+
+### II. Part 2: Cloning a Repository (`git clone`)
+
+While forking is coping someone's repository to your remote server, cloning is putting all the files in the repository directly onto your local computer.  You can directly clone someone's repository without forking, but it is best practice to fork first. 
+
+So let's clone the recently forked repository. Make sure that you are cloning the forked copy.  Check and make sure that your name should be in the top left hand corner of the repository page. Cloning is easily accomplished by clicking the "Clone in Desktop" button on the right side bar on the repository page. 
+
+![Finding Repository](fig/git-GUI-08.png)
+
+Now choose a location to put the repository on your computer and click "clone".  Depending on the size of the repository, this can take some time, but these small repositories should clone fast. 
+
+### III. Part 3: Making Changes
+
+Now that we have the copy, let's add something to the file. Add your name to the top of the 'README.md' file along with the one sentence about your research. Example: 
+
+    #Files for the Literate Programming lesson
+    *Modified by Your Name*
+
+    *Also Modified by Ciera Martinez: I research the evolution and development of plant shape.
+
+Commit this change and "Publish" / push back to *your* remote repository.
+
+### II. Part 4: Creating a Pull Request
+
+The last step on your end is sending your changes to the original owner of the repository by creating a pull request.  Go to the repository page you just pushed to and click the green button with two arrows near the name of the repository, then proceed by clicking "create pull request".
+
+![Finding Repository](fig/git-GUI-09.png)
+
+### II. Part 5: Accepting a Pull Request
+
+All that is left is accepting the pull request that has been sent to you requesting changes to your original repository. Go to your original repository, if everything went well on your partner's side, on the left side bar you can see that you have one pull request, click on the tab. You can see what your partner wants to add and if it looks good, "merge pull request".  You can add a commit to discuss the changes here also. 
+
+![Finding Repository](fig/git-GUI-10.png)
+
+![Finding Repository](fig/git-GUI-11.png)
+
+It may take a few times to get used to all the changes, so I highly encourage you to keep practicing. Find and create projects that allow a non-judgmental way to practice. Here are a few repositories that encourage practicing:
+
+-   [https://github.com/TheCodingCollective/quotes](https://github.com/grayghostvisuals/Practice-Git): Run by Ciera.
+-  [https://github.com/grayghostvisuals/Practice-Git](https://github.com/grayghostvisuals/Practice-Git)
+-   [https://bitbucket.org/tutorials/tutorials.bitbucket.org](https://github.com/grayghostvisuals/Practice-Git)
+
+### More information:
+
+**Branching**:  Dev. branch, 
+
+**How to Contribute**CONTRIBUTING.md, 
+
+Workflows, 
+
+**Conflicts**[Conflicts](http://swcarpentry.github.io/git-novice/09-conflict.html), ect.)
 
 ## A note about Git command line
 
@@ -135,12 +217,6 @@ The Github GUI is nice, but I highly recommend using Git on command line.
 -   [Github GUI Guide (Mac)](https://mac.github.com/help.html)
 -   [Github GUI Guide (Windows)](https://windows.github.com/help.html)
 -   [Bitbucket](https://bitbucket.org/) - alternative to Github hosting. Unlimited free 
-
-### Repositories to practice pushing and pulling
-
--   [https://github.com/grayghostvisuals/Practice-Git](https://github.com/grayghostvisuals/Practice-Git)
--   [https://github.com/TheCodingCollective/quotes](https://github.com/grayghostvisuals/Practice-Git)
--   [https://bitbucket.org/tutorials/tutorials.bitbucket.org](https://github.com/grayghostvisuals/Practice-Git)
  
 ### Examples of code from research papers on Github
 
