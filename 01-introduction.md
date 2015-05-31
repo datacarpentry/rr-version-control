@@ -102,4 +102,6 @@ This material was remixed from
 
 *   [Software Carpentry Git Novice Lesson](http://swcarpentry.github.io/git-novice/) - Copyright © Software Carpentry. All Software Carpentry instructional material is made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). The following is a human-readable summary of (and not a substitute for) the full legal text of the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode).
 
+All the rest of the material is This is dedicated to the public domain under the 
+[CC Zero](https://creativecommons.org/publicdomain/zero/1.0/) waiver.
 
