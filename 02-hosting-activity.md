@@ -4,32 +4,38 @@
 **Before this lesson**:
 
 *  Obtain a Github account. If you sign up using a student email you get five free private repositories through the [student developer pack](https://education.github.com/pack).
-*  Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).  *Unfortunatly, the GitHub GUI may not be available for everyone.  A great alternative GUI is Source Tree*
-
+*  Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).  *Unfortunatly, the GitHub GUI may not be available for everyone.  A great alternative GUI is [Source Tree](https://www.sourcetreeapp.com/)*
 
 **After this lesson, you should be able to**:
 
 *   Initiate Git in a local project directory.
-*   Evaluate Repository History.
+*   Evaluate repository History.
 *   Know the difference between directory and repository.
 *   Commit changes to files.
 *   Push local repository to remote repository on Github.
 *   Clone a remote repository.
 *   Create a pull request to someone else's remote repository.
-*   Differentiate between local and remote Repositories are.  
+*   Differentiate between a local and remote repository.  
 
 ## I. Git Locally 
 
-**Goal**: To initiate and make commit on a local directory (folder on your computer).
-
-**Tip**: With Git comes many strong opinions on the best practices of how to use Git. 
+With Git comes many strong opinions on the best practices of how to use Git. 
 The truth is Git can be really straight forward to use and best practices 
 only make sense and develop once you start using it. So let's jump in!
 
-### I. Part 1: Initiate Git in a Directory (`git init`)
+**Goal**: To initiate and make commit on a local directory (folder on your computer).
+
+###Outline
+
+1. Initiate Git in a Directory
+2. Commit
+3. Changing files
+4. "Rolling Back" into the past
+
+### I. Step 1: Initiate Git in a Directory (`git init`)
 
 Find your `lit-prog` directory, which may already be on your computer 
-from the organization lesson. If not, download here. Open the GitHub GUI.  
+from the organization lesson. Open the GitHub GUI.  
 Click the `+` in the top left corner of the screen, choose `add`, and 
 either enter the path to the `lit-prog` or click `choose` to find 
 the folder on your computer.  To complete click `create and add repository`.
@@ -39,12 +45,9 @@ the folder on your computer.  To complete click `create and add repository`.
 Now you have initiated Git into that directory you have created 
 a `Git repository`, which is a directory that is now being 
 tracked by Git software. It is tracked through a hidden 
-file called `.git` within the directory you added. It does 
-not matter where you move the directory, as long as the 
-.git file remains within, you will have your Git history 
-of that project.
+file called `.git` within the directory you added. 
 
-### I. Part 2: Commit (`git commit`)
+### I. Step 2: Commit (`git commit`)
 
 At this point we have just initiated Git within the `lit-prog` 
 directory.  You can see in the "History" tab that this 
@@ -52,8 +55,10 @@ repository has no history.  History only begins by making
 a **commit**.  Git is all about composing and saving snapshots 
 of your project and then working with and comparing those 
 snapshots. A commit is taking a snapshot, while attaching 
-a little note to help you navigate to why that instance of 
-the project is important.  
+a little note to help you understand that point in history of your
+project. You can look in the "Changes" tab and see all four files and 
+a lot of green lines. Our first commit is adding everything in the 
+directory.
 
 Let's go ahead and make a commit. All you have to do is 
 add a message that describes your commit and press "Commit to master". 
@@ -63,13 +68,12 @@ add a message that describes your commit and press "Commit to master".
 Now if you see that "Changes" tab is blank and if 
 you look at "History", you can view your first commit. 
 
-*tip*: There are many beliefs on best practices of committing.  
+*tip*: There are many best practices of committing.  
 The best advice is: Commit early and often. Then strive to 
 describe your commit concisely, but with meaning. You want to 
-be able to understand exactly what point of the project you 
-are in months from now. 
+be able to understand exactly what point of history in the future.
 
-### I. Part 3: Changing files (`git diff`)
+### I. Step 3: Changing files (`git diff`)
 
 Open up the `countryPick4.Rmd` and add your name to the YMAL 
 front matter at the top of the document, then Save.
@@ -81,17 +85,17 @@ front matter at the top of the document, then Save.
     ---
 
 Now if you look at the "Changes" tab you can see that the line 
-I added is clearly displayed in green.  You may also notice 
+I just added is clearly displayed in green.  You may also notice 
 that there are no other files present since we did not change 
 anything else. 
 
 ![Viewing Changes](fig/git-GUI-03.png)
 
-Go ahead and commit this change.
+Go ahead and commit this change and give the commit a good message.
 
 ### **On your own**: 
 
-Update the `countryPick4.Rmd` with the date and commit this change.
+1.) Update the `countryPick4.Rmd` with the date and commit this change.
 
     ---
     title: "Pick four - comparing trends in population  over time"
@@ -100,12 +104,12 @@ Update the `countryPick4.Rmd` with the date and commit this change.
     Date: June 2, 2015
     ---
 
-Add your name to the top of the `README.md` file content and commit this change.
+2.) Add your name to the top of the `README.md` file and commit this change.
 
     #Files for the Literate Programming lesson
     *Modified by Ciera Martinez*
 
-### I. Part 4: "Rolling Back" into the past (`git reset`)
+### I. Step 4: "Rolling Back" into the past (`git reset`)
 
 Now that you have a small history, let's go back in time. 
 **"Rolling back" (`git reset`)** creates a new commit 
@@ -125,7 +129,8 @@ Rolling back will leave the original commit in the
 repository's history, so you can always revert a 
 revert if necessary and never lose any commits.  Do 
 this on your "Added Date Line" commit to get back to where 
-we were by "Rolling back" to the commit where you added your name to `README.md`.
+we were by "Rolling back" to the commit where you added your name 
+to `README.md`.
 
 **Tip:** If you are going to use the Github GUI, only use 
 the Rollback option, don't use revert. Things can get really 
@@ -137,17 +142,17 @@ but there is a general rule to never rewrite your git history
 *especially* if you are collaborating or have already 
 published/hosted your code on-line. 
 
-**Questions**:
-
-*   What is the difference between directory and repository?
-*   What happens if you move your directory?  Do you still have your git history?
-*   What is the rollback mean?
-
 ## II. Git Remotely: Hosting on Github (`git push`)
 
-### II. Part 1: Log in to Github 
+###Outline
+1. Log in to Github and create a repository 
+2. Connect the your local and remote repositories
+3. Cloning other repositories and collaborating 
 
-Log into your browser, then click on the icon in the top right corner to create a new repository.
+### II. Step 1: Log in to Github and create a repository 
+
+Log into your browser, then click on the icon in the top right corner 
+to create a new repository.
 
 ![Creating a Repository on GitHub](fig/github-create-repo-01.png)
 
@@ -164,7 +169,7 @@ configure your local repository.
 
 Copy the HTTPS text line: example `https://github.com/iamciera/lit-prog-your-martinez.git`
 
-**II. Part 2**: Connect the two repositories
+### II. Step 2: Connect the your local and remote repositories
 
 Connect your local repository and the newly created remote repository on Github. 
 First, login to your Github account in the Github GUI from File > Preferences > Accounts. 
@@ -180,7 +185,7 @@ paste in the HTTPS address.  And click "Publish" in the top right corner.
 
 If you go back to your browser and press refresh, all your files should be there on Github!  
 
-## II. Part 3: Cloning Others Repos (`git clone`) and Collaborating 
+## III. Git Remotely: Cloning Others Repos (`git clone`) and Collaborating 
 
 One of the most powerful aspects of using git is for multiple people to work on 
 a single project together. Many of you may be aware of the struggles of 
@@ -190,7 +195,7 @@ is already outdated. So you spend a lot of time re-reading what is new and what 
 While these types of problems can be overcome using a service like Google Drive, on a 
 project with multiple files, organization becomes confusing fast. 
 
-A brief outline of how many people collaborate on Github:
+### Outline of Collaborating through Github
 
 1.  Get a copy of a project by `fork`ing the original repository to your remote server. 
 2.  `clone` your forked repository locally. 
@@ -199,9 +204,7 @@ A brief outline of how many people collaborate on Github:
 5.  Ask to merge your changes to the original project by creating a pull request.
 6.  Owner of the original repository checks your changes and merges your changes into the repository by accepting the pull request.
 
-### II. Part 4: Forking a repository
-
-
+### III. Step 1: Forking a repository
 
 For this exercise, team up with one other person. This tutorial is written from my (@iamciera) perspective, 
 my partner is Saul Goodman (@saulGoodmanNM).  I will be making changes to their repository 
@@ -229,7 +232,7 @@ now has a unique id.  My forked copy of Saul's repository is located at
 **Tip**: I highly recommend looking around at cool projects on Github, 
 forking them, and messing with the code to build something new.  Great learning resource.
 
-### II. Part 2: Cloning a Repository (`git clone`)
+### III. Step 2: Cloning a Repository (`git clone`)
 
 While forking is copying someone's repository to your remote server, cloning is 
 putting all the files in the repository directly onto your local computer.  
@@ -251,7 +254,7 @@ repositories should clone fast.
 repositories in one place. For example, I keep most of my git repositories in a directory
 called `git.repos`.
 
-### III. Part 3: Making Changes
+### III. Step 3: Making Changes
 
 Now that we have a copy on our computer, let's add something to the file. Add your name to the top of the 
 'README.md' file along with the one sentence about your research. Example: 
@@ -263,7 +266,7 @@ Now that we have a copy on our computer, let's add something to the file. Add yo
 
 Commit this change and "Publish" / push back to *your* remote repository.
 
-### II. Part 4: Creating a Pull Request
+### III. Step 4: Creating a Pull Request
 
 The last step on your end is sending your changes to the original owner of the repository by 
 creating a pull request.  Go to the repository page you just pushed to 
@@ -276,7 +279,7 @@ the name of the repository.
 You should see the exact change to the file you performed.  Go ahead and proceed by 
 clicking the green "create pull request".
 
-### II. Part 5: Accepting a Pull Request
+### III. Step 5: Accepting a Pull Request
 
 All that is left is accepting the pull request that has been sent to you requesting changes 
 to your original repository. Go to your original repository, if everything went 
@@ -288,7 +291,7 @@ You can add a commit to discuss the changes here also.
 
 ![Finding Repository](fig/git-GUI-11.png)
 
-### III. More information:
+### IV. More information:
 
 **Practice**:It may take a few times to get used to all the changes, so I highly encourage you to keep practicing.  
 Find and create projects that allow a non-judgmental way to practice. Ask your partner if you can 
