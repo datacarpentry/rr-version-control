@@ -1,5 +1,5 @@
 # Version Control via Git and Github
-*No command line skills needed.*
+*Tutorial to introduce major concepts of using Git and hosting on Github. No command line skills needed.*
 
 **Before this lesson**:
 
@@ -17,11 +17,11 @@
 *   Create a pull request to someone else's remote repository.
 *   Differentiate between a local and remote repository.  
 
-## I. Git Locally 
+## I. Git Locally (on your computer)
 
 With Git comes many strong opinions on the best practices of how to use Git. 
 The truth is Git can be really straight forward to use and best practices 
-only make sense and develop once you start using it. So let's jump in!
+only make sense and develop once you start using it. So let's Git started!
 
 **Goal**: To initiate and make commit on a local directory (folder on your computer).
 
@@ -144,6 +144,8 @@ published/hosted your code on-line.
 
 ## II. Git Remotely: Hosting on Github (`git push`)
 
+**Goal**: Host local repository on Github.
+
 ###Outline
 1. Log in to Github and create a repository 
 2. Connect the your local and remote repositories
@@ -194,6 +196,8 @@ By the time you get back edits from one person, the document from the other
 is already outdated. So you spend a lot of time re-reading what is new and what is old.
 While these types of problems can be overcome using a service like Google Drive, on a 
 project with multiple files, organization becomes confusing fast. 
+
+**Goal**: Make changes to someone else's Github repository.
 
 ### Outline of Collaborating through Github
 
