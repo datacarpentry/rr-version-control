@@ -29,18 +29,18 @@ Bad
 Good 
 ========================================================
 
-10.14.13_manuscriptFish.doc
-10.30.13_manuscriptFish.doc
-11.05.13_manusctiptFish_intitialRyanEdits.doc
-11.10.13_manuscriptFish.doc
-11.11.13_manuscriptFish.doc
-11.15.13_manuscriptFish.doc
-11.30.13_manuscriptFish.doc
-12.01.13_manuscriptFish.doc 
-12.02.13_manuscriptFish_PNASsubmitted.doc
-1.03.14_manuscriptFish_PLOSsubmitted.doc
-2.15.14_manuscriptFish_PLOSrevision.doc
-3.14.14_manuscriptFish_PLOSpublished.doc
+    2013-10-14_manuscriptFish.doc
+    2013-10-30_manuscriptFish.doc
+    2013-11-05_manusctiptFish_intitialRyanEdits.doc
+    2013-11-10_manuscriptFish.doc
+    2013-11-11_manuscriptFish.doc
+    2013-11-15_manuscriptFish.doc
+    2013-11-30_manuscriptFish.doc
+    2013-12-01_manuscriptFish.doc 
+    2013-12-02_manuscriptFish_PNASsubmitted.doc
+    2014-01-03_manuscriptFish_PLOSsubmitted.doc
+    2014-02-15_manuscriptFish_PLOSrevision.doc
+    2014-03-14_manuscriptFish_PLOSpublished.doc
 
 Better - Saving everything together at once
 ======================================================
