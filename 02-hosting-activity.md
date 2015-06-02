@@ -212,18 +212,17 @@ project with multiple files, organization becomes confusing fast.
 
 ### III. Step 1: Forking a repository
 
-For this exercise, team up with one other person. This tutorial is written from my (@iamciera) perspective, 
-my partner is Saul Goodman (@saulGoodmanNM).  I will be making changes to their repository 
-repository and they will be making changes to yours. 
+For this exercise, team up with one other person. This tutorial is written from my (@iamciera) perspective and  
+my partner is Saul Goodman (@saulGoodmanNM). 
 
 First find your partners repository by searching for their @name in the search bar at the top 
-left of your Github home page. Click on their `lit-prog` repository. 
+left of your Github home page. Click on their `spirit-animal` repository. 
 
 ![Finding Repository](fig/git-GUI-06.png)
 
 Notice that repositories on Github are categorized by user/repositoryName and every repository has a unique
 address on Github. Saul's is 
-[github.com/saulGoodmanNM/lit-prog-saul-goodman](https://github.com/saulGoodmanNM/lit-prog-saul-goodman). 
+[github.com/saulGoodmanNM/spirit-animal-saul-goodman](https://github.com/saulGoodmanNM/spirit-animal-saul-goodman). 
 Once there, click the "fork" button on the top left of the screen. 
 
 ![Finding Repository](fig/git-GUI-07.png)
@@ -233,10 +232,10 @@ whatever you want with it! You can do this with anyone's public project!
 Build upon any work that is out there! This is the beauty of open source.
 Anyway, notice that you have now made a copy of your partner's repository and it
 now has a unique id.  My forked copy of Saul's repository is located at
-[github.com/iamciera/lit-prog-saul-goodman](https://github.com/iamciera/lit-prog-saul-goodman).
+[github.com/iamciera/spirit-animal-saul-goodman](https://github.com/iamciera/spirit-animal-saul-goodman).
 
 **Tip**: I highly recommend looking around at cool projects on Github, 
-forking them, and messing with the code to build something new.  Great learning resource.
+forking them, and messing with the code to build something new.  Great learning resource.  You can even search for similar projects and get ideas for folder structure.
 
 ### III. Step 2: Cloning a Repository (`git clone`)
 
@@ -258,17 +257,13 @@ repositories should clone fast.
 
 **Tip**:  Where you put your cloned repo is up to you.  Many people try to keep their
 repositories in one place. For example, I keep most of my git repositories in a directory
-called `git.repos`.
+called `git.repos`. But for this tutorial and learning purposes your desktop is fine.
 
 ### III. Step 3: Making Changes
 
-Now that we have a copy on our computer, let's add something to the file. Add your name to the top of the 
-'README.md' file along with the one sentence about your research. Example: 
+Now that we have a copy on our computer, let's add something to the file. At the bottom of their README.md file add your name, your spirit animal, and your opinion about which animal would win in a fight.
 
-    #Files for the Literate Programming lesson
-    *Modified by Saul Goodman*
-
-    *Also Modified by Ciera Martinez: I research the evolution and development of plant shape.
+Example: `My name is Ciera Martinez and my spirit animal is a whale.  Although the fight would be close, I think in a fight between a whale and a honey badger, the honey badger would win.`
 
 Commit this change and "Publish" / push back to *your* remote repository.
 
