@@ -4,7 +4,7 @@
 **Before this lesson**:
 
 *  Obtain a Github account. If you sign up using a student email you get five free private repositories through the [student developer pack](https://education.github.com/pack).
-*  Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).  *Unfortunatly, the GitHub GUI may not be available for everyone.  A great alternative GUI is [Source Tree](https://www.sourcetreeapp.com/)*
+*  Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).  *Unfortunately, the GitHub GUI may not be available for everyone.  A great alternative GUI is [Source Tree](https://www.sourcetreeapp.com/)*
 
 **After this lesson, you should be able to**:
 
