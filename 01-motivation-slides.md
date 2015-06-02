@@ -77,7 +77,7 @@ You can then think
 about "playing back" different sets of changes onto the base document and getting 
 different versions of the document. 
 
-<center>![Different versions can be saved](fig/versions.png)</center>
+<center>![Different versions can be saved](fig/merge.png)</center>
 
 Why use Git?
 ========================================================
