@@ -299,10 +299,9 @@ Find and create projects that allow a non-judgmental way to practice. Ask your p
 continue practicing with them using this already established repository. Here are a few other repositories that 
 encourage practicing:
 
--   [https://github.com/TheCodingCollective/quotes](https://github.com/grayghostvisuals/Practice-Git): This is a repository I started to help people practice, it is just a single file where people add their favorite quotes. 
+-   [https://github.com/TheCodingCollective/quotes](https://github.com/TheCodingCollective/quotes): This is a repository I started to help people practice, it is just a single file where people add their favorite quotes. 
 -  [https://github.com/grayghostvisuals/Practice-Git](https://github.com/grayghostvisuals/Practice-Git):  This is just do whatever you want repository. Get creative.
--   [https://bitbucket.org/tutorials/tutorials.bitbucket.org](https://github.com/grayghostvisuals/Practice-Git): This is part of a Bitbucket tutorial, where you can also add quotes.
- 
+
 **Branching**:  We never discussed branching, but this is a powerful way to organize your workflow.
 Today, we just stayed on the master branch. Most people make commits and work on an alternative branch, 
 many times called the `dev` brnach.  There are many reasons to not work on the master branch, as discussed 
