@@ -1,10 +1,10 @@
 # Version Control via Git and Github
-*Tutorial to introduce major concepts of using Git and hosting on Github. No command line skills needed.*
+*Tutorial to introduce major concepts of using Git and hosting on Github. No command line skills needed. Although, if you do want to try and follow along by using command line, I have tried to include command line code in parentheses.*
 
 **Before this lesson**:
 
 *  Obtain a Github account. If you sign up using a student email you get five free private repositories through the [student developer pack](https://education.github.com/pack).
-*  Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).  *Unfortunatly, the GitHub GUI may not be available for everyone.  A great alternative GUI is [Source Tree](https://www.sourcetreeapp.com/)*
+*  Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).  *Unfortunately, the GitHub GUI may not be available for everyone.  A great alternative GUI is [Source Tree](https://www.sourcetreeapp.com/)*
 
 **After this lesson, you should be able to**:
 
@@ -34,10 +34,16 @@ only make sense and develop once you start using it. So let's Git started!
 
 ### I. Step 1: Initiate Git in a Directory (`git init`)
 
-Find your `lit-prog` directory, which may already be on your computer 
-from the organization lesson. Open the GitHub GUI.  
-Click the `+` in the top left corner of the screen, choose `add`, and 
-either enter the path to the `lit-prog` or click `choose` to find 
+Make a new folder on your Desktop and name it `spirit-animal-your-name` for example, `spirit-animal-ciera-martinez`.
+
+Create a file in Rstudio (or your favorite text editor) and name the file 'README.md'. Give the title as "Spirit Animal" and include your name as author.
+
+    # Spirit Animals
+    Author: Ciera Martinez
+
+Now open the GitHub GUI. Click the `+` in the top left corner of the screen, 
+choose `add`, and 
+either enter the path to the `spirit-animal-your-name` or click `choose` to find 
 the folder on your computer.  To complete click `create and add repository`.
 
 ![Initiating Git](fig/git-GUI-01.png)
@@ -49,19 +55,18 @@ file called `.git` within the directory you added.
 
 ### I. Step 2: Commit (`git commit`)
 
-At this point we have just initiated Git within the `lit-prog` 
+At this point we have just initiated Git within the `spirit-animal-your-name` 
 directory.  You can see in the "History" tab that this 
 repository has no history.  History only begins by making 
 a **commit**.  Git is all about composing and saving snapshots 
 of your project and then working with and comparing those 
 snapshots. A commit is taking a snapshot, while attaching 
 a little note to help you understand that point in history of your
-project. You can look in the "Changes" tab and see all four files and 
-a lot of green lines. Our first commit is adding everything in the 
-directory.
+project. You can look in the "Changes" tab and see only two lines
+in green, these are the changes we are committing.
 
 Let's go ahead and make a commit. All you have to do is 
-add a message that describes your commit and press "Commit to master". 
+add a message that describes your commit and press "Commit to master" (`git add .`, `git commit -m "message"`). 
 
 ![Commit](fig/git-GUI-02.png)
 
@@ -75,14 +80,16 @@ be able to understand exactly what point of history in the future.
 
 ### I. Step 3: Changing files (`git diff`)
 
-Open up the `countryPick4.Rmd` and add your name to the YMAL 
-front matter at the top of the document, then Save.
+Now let us add some more changes to the file. Write a sentence that 
+explains which animal best describes you i.e. your spirit animal.  
+If you do not know your spirit animal, close your eyes and your spirit
+animal will come to you.  Choose the first animal that comes to mind.  
+Should take maximum 30 seconds.
 
-    ---
-    title: "Pick four - comparing trends in population  over time"
-    output: pdf_document
+    # Spirit Animals
     Author: Ciera Martinez
-    ---
+
+    My spirit animal is a whale.
 
 Now if you look at the "Changes" tab you can see that the line 
 I just added is clearly displayed in green.  You may also notice 
@@ -93,23 +100,20 @@ anything else.
 
 Go ahead and commit this change and give the commit a good message.
 
-### **On your own**: 
+### **On your own**: Make three commits
 
-1.) Update the `countryPick4.Rmd` with the date and commit this change.
+1. ADD a list of three facts about whales. Don't forget to use markdown to format the text. Commit.
+2. Add a sentence about where your animal can be found. Commit.
+3.  Update you `README.md` file with a hyperlink to the wikipedia page of your spirit animal. Hyperlink syntax is `[text displayed](http://linktowikipia.com)`
 
-    ---
-    title: "Pick four - comparing trends in population  over time"
-    output: pdf_document
-    Author: Ciera Martinez
-    Date: June 2, 2015
-    ---
-
-2.) Add your name to the top of the `README.md` file and commit this change.
-
-    #Files for the Literate Programming lesson
-    *Modified by Ciera Martinez*
+*If you are ahead*
+4. Update your `README.md` file with a image of your spirit animal. Image markdown syntax is `![text](url to the image online)`.  Make sure that your image is small!!
 
 ### I. Step 4: "Rolling Back" into the past (`git reset`)
+
+At this point you should have several commits. You can see them in your "history" tab (`git log`). 
+
+<center><img src="./fig/git-GUI-030.png" width="200" height="200" /></center>
 
 Now that you have a small history, let's go back in time. 
 **"Rolling back" (`git reset`)** creates a new commit 
@@ -122,13 +126,14 @@ commit you would like to go back to and selecting
 ![Viewing Changes](fig/git-GUI-04.png)
 
 Try rolling back to your first commit and viewing your 
-`countryPick4.Rmd` file.  You can see that that file 
+`README.md` file.  You can see that that file 
 is now in the state when you made your first commit. 
 
-Rolling back will leave the original commit in the 
+Do not worry though. Rolling back will leave the original 
+commit in the 
 repository's history, so you can always revert a 
 revert if necessary and never lose any commits.  Do 
-this on your "Added Date Line" commit to get back to where 
+this on your last commit to get back to where 
 we were by "Rolling back" to the commit where you added your name 
 to `README.md`.
 
@@ -158,7 +163,7 @@ to create a new repository.
 
 ![Creating a Repository on GitHub](fig/github-create-repo-01.png)
 
-Name it `lit-prog-firstName-lastName`. For example, `lit-prog-ciera-martinez`. 
+Name it `spirit-animal-firstName-lastName`. 
 Then click "Create Repository".
 
 ![Creating a Repository on GitHub](fig/github-create-repo-02.png)
@@ -171,17 +176,14 @@ configure your local repository.
 
 Copy the HTTPS text line: example `https://github.com/iamciera/lit-prog-your-martinez.git`
 
-### II. Step 2: Connect the your local and remote repositories
+### II. Step 2: Connect your local and remote repositories
 
 Connect your local repository and the newly created remote repository on Github. 
 First, login to your Github account in the Github GUI from File > Preferences > Accounts. 
 
-Now we need to make our GitHub repository a remote for the local repository. 
-Go back to the GitHub GUI and click "Publish" in the top right hand corner. 
-
 The home page of the repository on GitHub includes the string we need to 
 identify it.  Go to Repository > Repository Settings, click "remote" and 
-paste in the HTTPS address.  And click "Publish" in the top right corner. 
+paste in the HTTPS address. (`git remote add origin https://github.com/user/repo.git`) Now click "Publish" in the top right corner (`git push origin master`). 
 
 ![Paste HTTPS address](fig/git-GUI-05.png)
 
@@ -210,18 +212,17 @@ project with multiple files, organization becomes confusing fast.
 
 ### III. Step 1: Forking a repository
 
-For this exercise, team up with one other person. This tutorial is written from my (@iamciera) perspective, 
-my partner is Saul Goodman (@saulGoodmanNM).  I will be making changes to their repository 
-repository and they will be making changes to yours. 
+For this exercise, team up with one other person. This tutorial is written from my (@iamciera) perspective and  
+my partner is Saul Goodman (@saulGoodmanNM). 
 
 First find your partners repository by searching for their @name in the search bar at the top 
-left of your Github home page. Click on their `lit-prog` repository. 
+left of your Github home page. Click on their `spirit-animal` repository. 
 
 ![Finding Repository](fig/git-GUI-06.png)
 
 Notice that repositories on Github are categorized by user/repositoryName and every repository has a unique
 address on Github. Saul's is 
-[github.com/saulGoodmanNM/lit-prog-saul-goodman](https://github.com/saulGoodmanNM/lit-prog-saul-goodman). 
+[github.com/saulGoodmanNM/spirit-animal-saul-goodman](https://github.com/saulGoodmanNM/spirit-animal-saul-goodman). 
 Once there, click the "fork" button on the top left of the screen. 
 
 ![Finding Repository](fig/git-GUI-07.png)
@@ -231,10 +232,10 @@ whatever you want with it! You can do this with anyone's public project!
 Build upon any work that is out there! This is the beauty of open source.
 Anyway, notice that you have now made a copy of your partner's repository and it
 now has a unique id.  My forked copy of Saul's repository is located at
-[github.com/iamciera/lit-prog-saul-goodman](https://github.com/iamciera/lit-prog-saul-goodman).
+[github.com/iamciera/spirit-animal-saul-goodman](https://github.com/iamciera/spirit-animal-saul-goodman).
 
 **Tip**: I highly recommend looking around at cool projects on Github, 
-forking them, and messing with the code to build something new.  Great learning resource.
+forking them, and messing with the code to build something new.  Great learning resource.  You can even search for similar projects and get ideas for folder structure.
 
 ### III. Step 2: Cloning a Repository (`git clone`)
 
@@ -256,17 +257,13 @@ repositories should clone fast.
 
 **Tip**:  Where you put your cloned repo is up to you.  Many people try to keep their
 repositories in one place. For example, I keep most of my git repositories in a directory
-called `git.repos`.
+called `git.repos`. But for this tutorial and learning purposes your desktop is fine.
 
 ### III. Step 3: Making Changes
 
-Now that we have a copy on our computer, let's add something to the file. Add your name to the top of the 
-'README.md' file along with the one sentence about your research. Example: 
+Now that we have a copy on our computer, let's add something to the file. At the bottom of their README.md file add your name, your spirit animal, and your opinion about which animal would win in a fight.
 
-    #Files for the Literate Programming lesson
-    *Modified by Saul Goodman*
-
-    *Also Modified by Ciera Martinez: I research the evolution and development of plant shape.
+Example: `My name is Ciera Martinez and my spirit animal is a whale.  Although the fight would be close, I think in a fight between a whale and a honey badger, the honey badger would win.`
 
 Commit this change and "Publish" / push back to *your* remote repository.
 
