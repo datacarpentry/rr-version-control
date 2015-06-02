@@ -52,7 +52,7 @@ Everytime you make a save, you zip the entire directory that your project files 
 Best - Version Control
 ======================================================
 
-![RAXML](fig/motivation-01.png)
+![RNeXML](fig/motivation-01.png)
 
 [https://github.com/ropensci/RNeXML](https://github.com/ropensci/RNeXML)
 
@@ -99,6 +99,6 @@ Features of using a Hosting Service Like Github
 
 Example
 ========================================================
-![RAXML](fig/motivation-01.png)
+![RNeXML](fig/motivation-01.png)
 
 [https://github.com/ropensci/RNeXML](https://github.com/ropensci/RNeXML)
