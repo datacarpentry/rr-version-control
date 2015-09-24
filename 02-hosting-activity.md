@@ -30,7 +30,6 @@ only make sense and develop once you start using it. So let's Git started!
 1. Initiate Git in a Directory
 2. Commit
 3. Changing files
-4. "Rolling Back" into the past
 
 ### I. Step 1: Initiate Git in a Directory (`git init`)
 
@@ -108,44 +107,6 @@ Go ahead and commit this change and give the commit a good message.
 
 *If you are ahead*
 4. Update your `README.md` file with a image of your spirit animal. Image markdown syntax is `![text](url to the image online)`.  Make sure that your image is small!!
-
-### I. Step 4: "Rolling Back" into the past (`git reset`)
-
-At this point you should have several commits. You can see them in your "history" tab (`git log`). 
-
-<center><img src="./fig/git-GUI-030.png" width="200" height="200" /></center>
-
-Now that you have a small history, let's go back in time. 
-**"Rolling back" (`git reset`)** creates a new commit 
-that reverts the changes of the commit you choose.  
-
-You can rollback to a single commit by clicking on the 
-commit you would like to go back to and selecting 
-“Rollback to this commit”. 
-
-![Viewing Changes](fig/git-GUI-04.png)
-
-Try rolling back to your first commit and viewing your 
-`README.md` file.  You can see that that file 
-is now in the state when you made your first commit. 
-
-Do not worry though. Rolling back will leave the original 
-commit in the 
-repository's history, so you can always revert a 
-revert if necessary and never lose any commits.  Do 
-this on your last commit to get back to where 
-we were by "Rolling back" to the commit where you added your name 
-to `README.md`.
-
-**Tip:** If you are going to use the Github GUI, only use 
-the Rollback option, don't use revert. Things can get really 
-confusing fast. I highly recommend messing around with it 
-further on a folder you are not concerned with or begin using 
-command line git to have more control.  Also, there is an "undo" 
-option in the "changes" tab if your git history gets confusing, 
-but there is a general rule to never rewrite your git history 
-*especially* if you are collaborating or have already 
-published/hosted your code on-line. 
 
 ## II. Git Remotely: Hosting on Github (`git push`)
 
