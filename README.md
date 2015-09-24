@@ -1,40 +1,46 @@
 # Version Control via Git and Github
 
-Before this lesson:
+## People:
 
--  Obtain a Github account. If you sign up using a student email you get five free private repositories through a [student developer pack](https://education.github.com/pack).
-- Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com). 
+**Ciera Martinez** ([@iamciera](https://github.com/iamciera)), Karen Cranston ([@kcranston](https://github.com/kcranston)), Hilmar Lapp ([@hlapp](https://github.com/hlapp))
 
-**After this lesson, you should be able to**:
+## Lesson synopsis
 
-*   Initiate Git in a local project directory.
+This lesson teaches the concept of version control using git. There are two different activities, one using GitHub and the locally-installed GitHub GUI client and one using only GitHub. Differences between the client on OS X and Windows can make the client activities challenging.
+
+## Syllabus
+
+After this lesson, students should be able to:
+*   Create a repository on GitHub.
+*   Commit changes to files.
 *   Evaluate repository History.
 *   Know the difference between directory and repository.
-*   Commit changes to files.
+*   Create a pull request to someone else's remote repository.
+
+If you are using the lesson with the local GUI client, then also:
+*   Initiate Git in a local project directory.
 *   Push local repository to remote repository on Github.
 *   Clone a remote repository.
-*   Create a pull request to someone else's remote repository.
 *   Differentiate between a local and remote repository.  
 
-## Outline
+## Setup
 
-1. 01-Motivation.md
-2. 02-hosting-activity.md
+Before this lessons, students should:
+-  Obtain a Github account. If you sign up using a student email you get five free private repositories through a [student developer pack](https://education.github.com/pack).
+- (optional; only if using lesson 02a) Install Github GUI. [Github GUI Guide (Mac)](https://mac.github.com), [Github GUI Guide (Windows)](https://windows.github.com).
+
+## Materials
+
+Note that any given workshop will use either exercise 02a (GitHub plus GitHub local client) or 02b (GitHub only), not both.
+
+1. 01-motivation-sides.md : slides that introduce version control, git and GitHub
+2. 02a-git-local-instructor-notes.md : instructor notes for exercise that uses both GitHub and the local GUI client
     -   I. Git Locally (on your computer)
-        +   Initiate Git in a Directory
-        +   Commit
-        +   Changing files
-        +   "Rolling Back" into the past
-    -   II. Git Remotely: Hosting on Github 
-        +   Log in to Github and create a repository
-        +   Connect the your local and remote repositories
-        +   Cloning other repositories and collaborating 
-    -   III. Git Remotely: Cloning Others Repos and Collaborating 
-        +   1.  Get a copy of a project by `fork`ing the original repository to your remote server. 
-        +   `clone` your forked repository locally. 
-        +   Make any changes. Commit changes.
-        +   "Publish" / `push`changes to your remote server.
-        +   Ask to merge your changes to the original project by creating a pull request.
-        +   Owner of the original repository checks your changes and merges your changes into the repository by accepting the pull request.
+    -   II. Git Remotely: Hosting on Github
+    -   III. Git Remotely: Cloning Others Repos and Collaborating
     -   IV. More Information (Resources)
-
+3. 02a-git-github-instructor-notes.md  : instructor notes for exercise that uses GitHub only
+  -   I. Creating and editing a git repository on GitHub
+  -   II. History and Differences
+  -   III. Collaborating on GitHub: joint repositories vs forks & PRs
+  -   IV. More Information (Resources)
