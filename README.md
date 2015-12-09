@@ -1,9 +1,5 @@
 # Version Control via Git and Github
 
-## People:
-
-**Ciera Martinez** ([@iamciera](https://github.com/iamciera)), Karen Cranston ([@kcranston](https://github.com/kcranston)), Hilmar Lapp ([@hlapp](https://github.com/hlapp))
-
 ## Lesson synopsis
 
 This lesson teaches the concept of version control using git. There are two different activities, one using GitHub and the locally-installed GitHub GUI client and one using only GitHub. Differences between the client on OS X and Windows can make the client activities challenging.
@@ -44,3 +40,13 @@ Note that any given workshop will use either exercise 02a (GitHub plus GitHub lo
   -   II. History and Differences
   -   III. Collaborating on GitHub: joint repositories vs forks & PRs
   -   IV. More Information (Resources)
+
+## People and credits
+
+This lesson was first created at the [1. Reproducible Science Curriculum Hackathon]. The corresponding author is **Ciera Martinez** ([@iamciera]). See the commit log for other contributors.
+
+Please post feedback and issues with the lesson on the repository's issue tracker. For instructor questions about teaching this lesson, you can also contact the corresponding author directly.
+
+[@iamciera]: https://github.com/iamciera
+[1. Reproducible Science Curriculum Hackathon]: https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014
+
