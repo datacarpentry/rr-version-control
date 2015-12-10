@@ -2,11 +2,15 @@
 
 These are notes are for teaching git collaboration through *only* Github (no local clients). Not putting files onto participants' machines reduced problems that occur from using different operating systems and does not require any local software installation.
 
-## Goals
+## Learning Objectives
 
-1. Intro to Git and Github, 
-2. allow them to share ways in which they organize their work, and 
-3. allow them to practice Markdown syntax.  
+1. Define git vocabulary (commit, fork, pull request, repository, commit message).
+2. Demonstrate ability to navigate through a Github repository main page. 
+3. Define the difference between a directory and a repository.
+3. Create a repository on GitHub.
+4. Demonstrate ability to commit changes to text files with a commit message.
+5. Evaluate repository History.
+6. Create a pull request to someone else's repository.
 
 Brief introuction showing them how our rrhack group collaboratively made our curriculum material. 
 
