@@ -1,16 +1,133 @@
 ---
-title: "Version control II: Git via GitHub"
+title: "Version control II: Git in Github"
 author: "Reproducible Science Workshop"
 output:
   ioslides_presentation:
     highlight: pygments
     widescreen: yes
 ---
+## Learning Objectives
 
-## Your turn!
+At the end of this module you should be able to 
 
-- Create a git repository hosted at GitHub
-- Record changes to files in the repository
-- History, diffs, and blame
-- Two ways to collaborate on GitHub (aka 'Who are your collaborators?')
-- GitHub features: Issues and wikis
+1. Define git vocabulary (commit, fork, pull request, repository, commit message).
+2. Demonstrate ability to navigate through a Github repository main page. 
+3. Define the difference between a directory and a repository.
+3. Create a repository on GitHub.
+4. Demonstrate ability to commit changes to text files with a commit message.
+5. Evaluate repository History.
+6. Create a pull request to someone else's repository.
+
+## Overview
+
+In this activity you are going to learn how to collaborate using Github.  With a partner you will learn some basics which allow you to share and edit files on Github. 
+
+1. Create a git repository hosted at GitHub
+2. Build `README.md` file 
+3. Commit changes to repository
+3. Collaborate by forking and editing partners file
+4. Explore Github features: graphs, diff, blame, ect.
+
+## Requirement 
+
+1. Must have a Github account.
+
+# Step-by-Step
+
+## Create a repository with a README.md file (10 minutes)
+
+**Step 1**: First we are going to create a repository within our Github user account. 
+
+Follow along with your instructor and perform these steps:
+
+1. Go to your Github profile. The url should be [http://github/your-user-name]().
+2. Create a new Github repository, click the green "new" button, under the repositories tab.
+3. Name your repository `work-organization-your-name`
+4. In the details write "tips to organizing research".
+5. Click the initiate a `README.md file` option. 
+
+## So far
+
+-  A **repository** is a directory (folder) that houses both the files of a project AND the git history of the project.
+-  Once the repository is created you will be directed to the repository page which now has its own web address. 
+-  Each repository on Github has a unique url so you can easily share. 
+-  The git history is a detailed history of all the changes made to that file.  One of the features of using Github is the ability to view your repository history which are displayed in the Graphs section of your Github repository page. 
+-  At this point in the git history of your `work-organization-your-name` repository there is only one commit.
+
+## Edit the `README.md` file (10 minutes)
+
+1.  Go back to the `work-organization-your-name` repository main page. Click on `README.md`, then click "edit this file". Add the following information into the `readme.md` file:
+    -  Name?
+    -  What kind of scientist do you you tell people you are at dinner parties?
+    -  In the past month, what are the three main activities you have been doing at work?
+    -  What are the three most important tools/strategies you use for organizing your work?
+
+*tip*:  Notice that you can use markdown syntax. Use [this guide](https://help.github.com/articles/markdown-basics/) for Github's flavor of Markdown. Use the "Preview" button to view the formatting of your readme.md file. 
+
+## Commit
+
+- **Commit** takes a snap shot of your project. Each commit includes a commit message that concisely defines changes made or project state at the time of the commit. 
+
+1. Summarize the changes that you have made in 50 characters or less and click the green "commit button". 
+2. Check out the git history.  You should now see two commits.
+
+# Edit collaborate with your partner (15 min) 
+
+## Collaborate
+
+Now it is time to collaborate with your partner.  Navigate to your partner's repository by typing the url directly into your address bar. In order to edit someone else's repository you usually follow this simplified work flow: 
+
+1. Fork their repository to your user account 
+2. Make edits and commit 
+3. Create a pull request that merges your changes into their repository. 
+
+*tip*: Depending on the project there are variations on the above work flow. Often the rules for contributing to a project are outlined in a file called `CONTRIBUTING.md` within the repository. One of the more often used works flows is [Github Flow](https://guides.github.com/introduction/flow/). 
+
+## Forking
+
+- **Forking** is creating a copy of a git repository into your own account.  
+-  Forking allows you to make changes to a repository without affecting the main repository of the project.  
+-  This is one of the most exciting aspects of Github - you essentially encouraged to copy and play with anyone's code! 
+
+## Forking
+
+1.  To fork your partner's repository click the "fork" button in the top left hand part of your screen.  
+2.  When it asks where you would like to fork the repository, choose your user account (if you are new to Github, this should be the only option).
+
+
+## Make edits and commit
+
+- You should now have a copy of your partners repository, `work-organization-their-name`. 
+-  Github keeps track of the entire git history of the project and all forked copies made of the project. 
+
+1. Edit your partners repository by clicking the edit button.  
+2.  Paste in the answers to your questions under theirs and make a commit. 
+
+## Create a pull request
+
+- A **pull request** is the final step in the collaboration process, essentially asking if the edits made to your copy can be incorporated into another repository. 
+
+1.  Make sure you are in your copy of your partner's repository by looking at the url - your user name should preface the repository name.  
+2.  Click the green "New Pull Request" button. You will get an overview of the changes you made to the repository. 
+3.  Click the "Create a Pull Request" button to continue the pull request. Your partner will now get a notification of a pull request on their main repository, as will you if your partner made changes. 
+
+4.  Go ahead and accept this pull request. 
+
+
+## Explore Github Features
+
+Now that you have accepted the pull request.  Take a few minutes to explore the git history using the Graphs section of the repository. 
+
+## Extra Exercise *after* class:
+
+Find a way to practice by contributing more. You don't have to be a great at programming to help with projects.  Many projects are in need of spelling or general editing. There is a whole Twitter community that helps beginner Git users find projects to practice using git.  
+
+Check it out if you want to contribute to more projects: [https://twitter.com/yourfirstpr](https://twitter.com/yourfirstpr).
+
+If you are interested in practicing this process try adding a quote to this repository: [https://github.com/TheCodingCollective/quotes](https://github.com/TheCodingCollective/quotes).
+
+
+
+
+
+
