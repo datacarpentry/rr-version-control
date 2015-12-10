@@ -1,0 +1,16 @@
+---
+title: "Version control II: Git via GitHub"
+author: "Reproducible Science Workshop"
+output:
+  ioslides_presentation:
+    highlight: pygments
+    widescreen: yes
+---
+
+## Your turn!
+
+- Create a git repository hosted at GitHub
+- Record changes to files in the repository
+- History, diffs, and blame
+- Two ways to collaborate on GitHub (aka 'Who are your collaborators?')
+- GitHub features: Issues and wikis

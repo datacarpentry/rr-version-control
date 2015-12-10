@@ -126,12 +126,3 @@ From [Software Carpentry](https://software-carpentry.org/).
 <br><br><br>
 
 From Code for RNeXML R package, plus RNeXML publication in RMarkdown, [https://github.com/ropensci/RNeXML](https://github.com/ropensci/RNeXML).
-
-
-## Exercise: Git via GitHub
-
-- create a git repository hosted at GitHub
-- record changes to files in the repository
-- history, diffs, and blame
-- two ways to collaborate on GitHub (aka 'Who are your collaborators?')
-- GitHub features: Issues and wikis
