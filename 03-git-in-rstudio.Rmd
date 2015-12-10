@@ -45,10 +45,14 @@ For this lesson we will focus on Git.
 
 **Fork the [`rr-version-control-demo`](https://github.com/Reproducible-Science-Curriculum/rr-version-control-demo) repository.**
 
+<br>
+
 1. Go to the repository at https://github.com/Reproducible-Science-Curriculum/rr-version-control-demo.
 2. Click on Fork (on the top right corner).
 
-Now you have a copy of `rr-version-control-demo` repository in your account, woohoo!
+<br><br>
+
+*Now you have a copy of `rr-version-control-demo` repository in your account, woohoo!*
 
 ## Aside: Where am I?
 
@@ -57,25 +61,30 @@ Now you have a copy of `rr-version-control-demo` repository in your account, woo
 - Look at the URL.
 - Look at the name of the repo on the upper left corner, for your fork it will say:
 
-[your-github-name]/rr-version-control-demo <br>
+~~~
+[your-github-name]/rr-version-control-demo
 forked from Reproducible-Science-Curriculum/rr-version-control-demo
+~~~
 
 ## Step 2: Clone
 
-**Clone your forked repository to obtain a local copy of the files into an RStudio project.**
+**Clone your forked repository to obtain a local copy of the files .**
 
-1. Go to RStudio
-2. Go to File, and then New Project
-    - Version Control: Checkout a project from a version control repository
-    - Git: Clone a project from a repository
-    - Fill in the info:
-        - URL: use HTTPS address
-        - Create as a subdirectory of: Browse to where you would like to create this folder
+<br>
+
+1. In RStudio, go to File, and then New Project
+2. Click on *Version Control: Checkout a project from a version control repository*
+3. Click on *Git: Clone a project from a repository*
+4. Fill in the info:
+    - URL: use HTTPS address
+    - Create as a subdirectory of: Browse to where you would like to create this folder
         
         
 ## Step 3: Edit
 
 **Edit a file in this repository/project.**
+
+<br>
 
 1. Open the file called `gdp-life-expectancy.Rmd` and knit.
 2. Change the `analysis_year` to another year for which we have data, and knit again. Examine the output for changes.
@@ -85,109 +94,62 @@ forked from Reproducible-Science-Curriculum/rr-version-control-demo
 
 **Stage your changes to be committed.**
 
+<br>
+
 1. Go to the Git pane in RStudio.
 2. Stage the changes for `gdp-life-expectancy.Rmd` and `gdp-life-expectancy.html` by checking the boxes next to then, and hit Commit.
-3. In the pop-up window view the *diff* for the Rmd file. You can view it for the HTML file as well if you like.
-4. Enter an **informative** commit message, like "Changed analysis year to X", and hit Commit.
-5. Now push your changes to GitHub by hitting Push.
 
+<br><br>
 
-# Step 5: Commit
+*Don't worry about the other files that appear in this pane, we'll get to them in a bit.*
+
+## Step 5: Commit
 
 **View the diff, and commit your changes, with a commit message.**
 
-# Step 6: Push
+<br>
+
+1. In the pop-up window view the *diff* for the Rmd file. You can view it for the HTML file as well if you like.
+2. Enter an **informative** commit message, like "Changed analysis year to X", and hit Commit.
+
+## Step 6: Push
 
 **Push your changes to your own fork of the the `rr-version-control-demo` GitHub repository.**
 
+<br>
 
+1. Now push your changes to GitHub by hitting Push.
+2. Enter login information as needed.
 
-# yo
+<br><br>
 
-## yolo
+*Getting an error? Can't push? See [here](https://github.com/jennybc/stat540_2014/blob/master/seminars/seminar92_git.md) under GitHub password. Ask a helper!*
 
-Visualize relationship between life expectancy and GDP per capita in
-2007 in countries. 
+# Other day one essentials
 
-## Step 0: Load necessary packages
+## More info on the Git pane
 
-- In the following exercises we'll use `dplyr` (for data wrangling) and 
-`ggplot2` (for visualization) packages.
+File tracking:
 
-- Make sure the packages are installed.
+- The RStudio Git pane lists every file that’s been added, modified or deleted. 
 
-- Load these packages in your markdown file:
+- The icon describes the change:
+    + ![git-mod](fig/rstudio-git-modified.png) **Modified:** You've changed the contents of the file.
+    + ![git-unt](fig/rstudio-git-unknown.png) **Untracked:** You've added a new file that Git hasn't seen before.
+    + ![git-unt](fig/rstudio-git-deleted.png) **Deleted:** You've deleted a file.
 
-```{r message=FALSE}
-library(dplyr)
-library(ggplot2)
-```
+You can get more details about modifications with a ![git-unt](fig/rstudio-git-diff.png):
 
-## Step 1: Load data
+- Green: added text
 
-```{r}
-gapminder <- read.csv("https://stat.duke.edu/~mc301/data/gapminder.csv")
-```
+- Red: removed text
 
-## Step 2: Subset data
+## What's in my Git pane?
 
-- Start with the `gapminder` dataset
+- When you cloned your repo into an RStudio project you got two bonus files that weren't there before: `.gitignore` and `.rr-version-control-demo.Rproj`
 
-- Filter for cases (rows) where year is equal to 2007
+- They're both showing up as **untracked** since Git hasn't seen them before. You can stage, commit, and push those files to your repository.
 
-- Save this new subsetted dataset as `gap07`
+- `.rr-version-control-demo.Rproj`: This file maintains metadata on the R project.
 
-```{r}
-gap07 <- gapminder %>%
-  filter(year == 2007)
-```
-
-
-## Step 2: Explore and visualize
-
-**Task:** Visualize the relationship between `gdpPercap` and `lifeExp`.
-
-```{r, fig.height=4, fig.width=7}
-qplot(x = gdpPercap, y = lifeExp, data = gap07)
-```
-
-## Step 3: Dig deeper
-
-**Task:** Color the points by continent.
-
-```{r, fig.height=4, fig.width=7}
-qplot(x = gdpPercap, y = lifeExp, color = continent, data = gap07)
-```
-
-## Step 3: Commit and push all changes
-
-- Stage
-
-- Commit (with a message)
-
-- Push
-
-## A note on piping and layering
-
-- The `%>%` operator in `dplyr` functions is called
-the pipe operator. This means you "pipe" the output of the previous
-line of code as the first input of the next line of code.
-
-- The `+` operator in `ggplot2` functions is used for "layering". This
-means you create the plot in layers, separated by `+`.
-
-# What's next?
-
-## Update your analysis
-
-What if you wanted to now change your analysis 
-
-- to subset for 1952
-
-- plot life expectancy (`lifeExp`) vs. population (`pop`)
-
-- and size the points by GPD (`gpdPercap`)
-    - hint: add argument `size = gpdPercap` to your plotting code
-
-Once you're done, commit and push all your changes with a meaningful
-message.
+- `.gitignore`: Git uses this file to determine which files and directories to ignore, before you make a commit.
