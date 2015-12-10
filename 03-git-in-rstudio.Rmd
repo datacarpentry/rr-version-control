@@ -1,0 +1,193 @@
+---
+title: "Version control III: Git in RStudio"
+author: "Reproducible Science Workshop"
+output:
+  ioslides_presentation:
+    highlight: pygments
+    widescreen: yes
+---
+
+# Overview
+
+## RStudio and version control
+
+RStudio includes integrated support for two open source version control systems:
+
+- Git
+- Subversion
+
+For this lesson we will focus on Git.
+
+## Two requirements
+
+1. Install Git (you should have already done this)
+
+2. Be familiar with using RStudio Projects, which are required for version control features to be enabled
+    - RStudio projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents.
+
+# Step-by-step
+
+## Follow along demo
+
+**Step 1:** Fork the [`rr-version-control-demo`](https://github.com/Reproducible-Science-Curriculum/rr-version-control-demo) repository.
+
+**Step 2:** Clone your forked repository to obtain a local copy of the files into an RStudio project.
+
+**Step 3:** Edit a file in this repository/project.
+
+**Step 4:** Stage your changes to be committed.
+
+**Step 5:** View the diff, and commit your changes, with a commit message.
+
+**Step 6:** Push your changes to your own fork of the the `rr-version-control-demo` GitHub repository.
+
+## Step 1: Fork
+
+**Fork the [`rr-version-control-demo`](https://github.com/Reproducible-Science-Curriculum/rr-version-control-demo) repository.**
+
+1. Go to the repository at https://github.com/Reproducible-Science-Curriculum/rr-version-control-demo.
+2. Click on Fork (on the top right corner).
+
+Now you have a copy of `rr-version-control-demo` repository in your account, woohoo!
+
+## Aside: Where am I?
+
+**How can I tell if I am looking at my fork or the original repository?**
+
+- Look at the URL.
+- Look at the name of the repo on the upper left corner, for your fork it will say:
+
+[your-github-name]/rr-version-control-demo <br>
+forked from Reproducible-Science-Curriculum/rr-version-control-demo
+
+## Step 2: Clone
+
+**Clone your forked repository to obtain a local copy of the files into an RStudio project.**
+
+1. Go to RStudio
+2. Go to File, and then New Project
+    - Version Control: Checkout a project from a version control repository
+    - Git: Clone a project from a repository
+    - Fill in the info:
+        - URL: use HTTPS address
+        - Create as a subdirectory of: Browse to where you would like to create this folder
+        
+        
+## Step 3: Edit
+
+**Edit a file in this repository/project.**
+
+1. Open the file called `gdp-life-expectancy.Rmd` and knit.
+2. Change the `analysis_year` to another year for which we have data, and knit again. Examine the output for changes.
+
+
+## Step 4: Stage
+
+**Stage your changes to be committed.**
+
+1. Go to the Git pane in RStudio.
+2. Stage the changes for `gdp-life-expectancy.Rmd` and `gdp-life-expectancy.html` by checking the boxes next to then, and hit Commit.
+3. In the pop-up window view the *diff* for the Rmd file. You can view it for the HTML file as well if you like.
+4. Enter an **informative** commit message, like "Changed analysis year to X", and hit Commit.
+5. Now push your changes to GitHub by hitting Push.
+
+
+# Step 5: Commit
+
+**View the diff, and commit your changes, with a commit message.**
+
+# Step 6: Push
+
+**Push your changes to your own fork of the the `rr-version-control-demo` GitHub repository.**
+
+
+
+# yo
+
+## yolo
+
+Visualize relationship between life expectancy and GDP per capita in
+2007 in countries. 
+
+## Step 0: Load necessary packages
+
+- In the following exercises we'll use `dplyr` (for data wrangling) and 
+`ggplot2` (for visualization) packages.
+
+- Make sure the packages are installed.
+
+- Load these packages in your markdown file:
+
+```{r message=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+## Step 1: Load data
+
+```{r}
+gapminder <- read.csv("https://stat.duke.edu/~mc301/data/gapminder.csv")
+```
+
+## Step 2: Subset data
+
+- Start with the `gapminder` dataset
+
+- Filter for cases (rows) where year is equal to 2007
+
+- Save this new subsetted dataset as `gap07`
+
+```{r}
+gap07 <- gapminder %>%
+  filter(year == 2007)
+```
+
+
+## Step 2: Explore and visualize
+
+**Task:** Visualize the relationship between `gdpPercap` and `lifeExp`.
+
+```{r, fig.height=4, fig.width=7}
+qplot(x = gdpPercap, y = lifeExp, data = gap07)
+```
+
+## Step 3: Dig deeper
+
+**Task:** Color the points by continent.
+
+```{r, fig.height=4, fig.width=7}
+qplot(x = gdpPercap, y = lifeExp, color = continent, data = gap07)
+```
+
+## Step 3: Commit and push all changes
+
+- Stage
+
+- Commit (with a message)
+
+- Push
+
+## A note on piping and layering
+
+- The `%>%` operator in `dplyr` functions is called
+the pipe operator. This means you "pipe" the output of the previous
+line of code as the first input of the next line of code.
+
+- The `+` operator in `ggplot2` functions is used for "layering". This
+means you create the plot in layers, separated by `+`.
+
+# What's next?
+
+## Update your analysis
+
+What if you wanted to now change your analysis 
+
+- to subset for 1952
+
+- plot life expectancy (`lifeExp`) vs. population (`pop`)
+
+- and size the points by GPD (`gpdPercap`)
+    - hint: add argument `size = gpdPercap` to your plotting code
+
+Once you're done, commit and push all your changes with a meaningful
+message.
