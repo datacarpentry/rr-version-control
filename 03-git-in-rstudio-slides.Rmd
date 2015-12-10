@@ -9,7 +9,7 @@ output:
 
 # Overview
 
-## RStudio and version control
+## RStudio and version controls
 
 RStudio includes integrated support for two open source version control systems:
 
@@ -87,7 +87,7 @@ forked from Reproducible-Science-Curriculum/rr-version-control-demo
 <br>
 
 1. Open the file called `gdp-life-expectancy.Rmd` and knit.
-2. Change the `analysis_year` to another year for which we have data, and knit again. Examine the output for changes.
+2. Change the `analysis_year` to another year for which we have data (1952, 1957, 1962, 1967, 1972, 1977, 1982, 1987, 1992, 1997, 2002, 2007), and knit again. Examine the output for changes.
 
 
 ## Step 4: Stage
@@ -115,6 +115,8 @@ forked from Reproducible-Science-Curriculum/rr-version-control-demo
 ## Step 6: Push
 
 **Push your changes to your own fork of the the `rr-version-control-demo` GitHub repository.**
+
+**push**: When using git push always means pushing commits from your local respository (your computer) to a remote repository (Github).
 
 <br>
 
