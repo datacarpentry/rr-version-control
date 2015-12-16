@@ -2,7 +2,7 @@
 
 ## Lesson synopsis (1.5 - 2 hours)
 
-This lesson teaches the concept of version control using git. There The lesson begins with a slides describing the motivations for using version control and Github.  The first activity is a follow along partner activity which explores git in GitHub only (`02-git-in-github`). Since the project is never brought locally onto the students computer, the students do not need to install git for this project. The second activity starts with a demo in RStudio which can be followed along if the students have installed git (`03-git-in-rstudio`).  This activity introduces the students to using git on their computers. 
+This lesson teaches the concept of version control using git. The lesson begins with a slides describing the motivations for using version control and Github.  The first activity is a follow along partner activity which explores git in GitHub only (`02-git-in-github`). Since the project is never brought locally onto the students computer, the students do not need to install git for this project. The second activity starts with a demo in RStudio which can be followed along if the students have installed git (`03-git-in-rstudio`).  This activity introduces the students to using git on their computers. 
 
 ## Setup
 
@@ -36,9 +36,8 @@ At the end of this module you should be able to:
 
 1. `01-motivation-sides.md` : slides that introduce version control, git, and GitHub.
 2. `02-git-in-github-instructors.md`: instructor notes for exercise that uses
-3. `02-git-in-github.md`: Activity notes for the students to follow.
-3. `02-git-in-github-slides.Rmd` and `02-git-in-github-slides.html`: An overview slide that can be projected during activity. 
-4. `03-git-in-rstudio-slides.html` and `03-git-in-rstudio-slides.html`: Guide for students to follow during git in rstudio activity.
+3. `02-git-in-github-slides.Rmd` and `02-git-in-github-slides.html`: git in Github activity.
+4. `03-git-in-rstudio-slides.html` and `03-git-in-rstudio-slides.html`: git in RStudio activity.
 5. `04-resources-for-learning.md` - *incomplete*, a file that can be used as a reference for self learning git.
 
 ## People and credits
