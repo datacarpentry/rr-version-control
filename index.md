@@ -2,9 +2,11 @@
 layout: lesson
 root: .
 ---
-FIXME: home page introduction
+The is the Data Carpentry lesson on using Version Control for Reproducible Research.
 
 > ## Prerequisites
+> - `R`
+> - `RStudio`
+> - `git` and a GitHub account
 >
-> FIXME
 {: .prereq}
