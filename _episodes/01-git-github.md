@@ -58,7 +58,7 @@ Everytime you make a save, you zip the entire directory that your project files 
 
 ## Best - Version Control
 
-![](../fig/motivation-01.png){:width = "400px"}
+![](../fig/motivation-01.png)
 
 [Code for `RNeXML` `R` package, plus RNeXML publication in `RMarkdown`](https://github.com/ropensci/RNeXML)
 
@@ -66,23 +66,25 @@ Everytime you make a save, you zip the entire directory that your project files 
 - Version control systems start with a base version of the document and then save just the changes you made at each step of the way.
 - You can think of it as a tape: if you rewind the tape and start at the base document, then you can play back each change and end up with your latest version.
 
-<img src = "../fig/play-changes.png" width = 800>
+![](../fig/play-changes.png)
 
 [Software Carpentry](https://software-carpentry.org/)
 
 - You can then think about "playing back" different sets of changes onto the base document and getting different versions of the document.
 
-<img src = "../fig/merge.png" width = 500>
+![](../fig/merge.png)
 
 [Software Carpentry](https://software-carpentry.org/)
 
 ## Why use Git and GitHub
+
 ### Why use Git?
 - Makes you fearless
 - Easy to set up
 - Allows you to take a snapshot of every stage of your project history
 - Takes up minimal space
 - Creates a easy navigable map to the history of all changes made
+
 ### Features of using a Hosting Service Like GitHub
 - Backup of your project
 - No need for a server: easy to set up
@@ -91,7 +93,7 @@ Everytime you make a save, you zip the entire directory that your project files 
 - A common location to share off your work
 
 ### Example
-<img src = "../fig/motivation-01.png" width = 800>
+![](../fig/motivation-01.png)
 
 [Code for `RNeXML` `R` package, plus RNeXML publication in `RMarkdown`](https://github.com/ropensci/RNeXML)
 

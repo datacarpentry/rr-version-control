@@ -79,12 +79,14 @@ Everytime you make a save, you zip the entire directory that your project files 
 [Software Carpentry](https://software-carpentry.org/)
 
 ## Why use Git and GitHub
+
 ### Why use Git?
 - Makes you fearless
 - Easy to set up
 - Allows you to take a snapshot of every stage of your project history
 - Takes up minimal space
 - Creates a easy navigable map to the history of all changes made
+
 ### Features of using a Hosting Service Like GitHub
 - Backup of your project
 - No need for a server: easy to set up
