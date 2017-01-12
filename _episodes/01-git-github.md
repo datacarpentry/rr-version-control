@@ -1,5 +1,5 @@
 ---
-title: "Version control I: Version Control via Git and Github"
+title: "Version Control via Git and Github"
 teaching: 30
 exercises: 10
 questions:
@@ -58,7 +58,7 @@ Everytime you make a save, you zip the entire directory that your project files 
 
 ## Best - Version Control
 
-<img src = "../fig/motivation-01.png" width = 800>
+![](../fig/motivation-01.png){:width = "400px"}
 
 [Code for `RNeXML` `R` package, plus RNeXML publication in `RMarkdown`](https://github.com/ropensci/RNeXML)
 
