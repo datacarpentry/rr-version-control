@@ -95,6 +95,7 @@ File tracking:
   - ![](../fig/rstudio-git-modified.png) **Modified** You've changed the contents of the file.
   -  ![](../fig/rstudio-git-unknown.png) **Untracked**: You've added a new file that Git hasn't seen before.
   - ![](../fig/rstudio-git-deleted.png) **Deleted**: You've deleted a file.
+  - ![](../fig/rstudio-git-renamed.png)  **Renamed**: You've renamed a file.
 
 You can get more details about modifications with a : ![](../fig/rstudio-git-diff.png)
 
