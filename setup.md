@@ -6,7 +6,7 @@ permalink: /setup/
 Your installation for `Git` will vary depending on your operating system.
 
 - Mac OSX - `git` is already installed on your machine.
-    - If you have an older OSX, you may still need to download `git`. [Detailed installation instructions](https://swcarpentry.github.io/workshop-template/#git)
+    - If you have an older OSX, you may still need to download `git`. [Detailed installation instructions](https://carpentry.github.io/workshop-template/#git)
 - Linux - `git` is already installed on your machine.
 - Windows - you will need to install the components:
     - [Installation video](https://www.youtube.com/watch?v=339AEqk9c-8)
