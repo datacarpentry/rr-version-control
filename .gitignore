@@ -7,4 +7,6 @@
 __pycache__
 _site
 .Rproj.user
-_episodes_rmd/_episodes_rmd.Rproj
+.Rhistory
+.RData
+
