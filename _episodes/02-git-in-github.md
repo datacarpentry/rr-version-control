@@ -6,7 +6,7 @@ questions:
 - "How should we manipulate data?"
 objectives:
 - "Define git vocabulary (commit, fork, pull request, repository, commit message)."
-- "Demonstrate ability to navigate through a Github repository main page."
+- "Demonstrate ability to navigate through a GitHub repository main page."
 - "Define the difference between a directory and a repository."
 - "Create a repository on GitHub."
 - "Demonstrate ability to commit changes to text files with a commit message."
@@ -21,24 +21,24 @@ output:
 
 
 > ## Requirements
-> - Must have a Githuv account.
+> - Must have a GitHub account.
 >
 {: .prereq}
 
 > ## Overview
-> 1. In this activity you are going to learn how to collaborate using Github. With a partner you will learn some basics which allow you to share and edit files on Github.
+> 1. In this activity you are going to learn how to collaborate using GitHub. With a partner you will learn some basics which allow you to share and edit files on GitHub.
 > 1. Create a git repository hosted at GitHub
 > 1. Build README.md file
 > 1. Commit changes to repository
 > 1. Collaborate by forking and editing partners file
-> 1. Explore Github features: graphs, diff, blame, ect.
+> 1. Explore GitHub features: graphs, diff, blame, ect.
 {: .keypoints}
 
 ## Step-by-Step
 ### Create a repository with a `README.md` file
 Follow along with your instructor and perform these steps:
-1. Go to your Github profile. The url should be http://github/your-user-name.
-1. Create a new Github repository, click the green "new" button, under the repositories tab.
+1. Go to your GitHub profile. The url should be http://github/your-user-name.
+1. Create a new GitHub repository, click the green "new" button, under the repositories tab.
 1. Name your repository work-organization-your-name
 1. In the details write "tips to organizing research".
 1. Click the initiate a README.md file option.
@@ -46,8 +46,8 @@ Follow along with your instructor and perform these steps:
 ### So far
 - A repository is a directory (folder) that houses both the files of a project AND the git history of the project.
 - Once the repository is created you will be directed to the repository page which now has its own web address.
-- Each repository on Github has a unique url so you can easily share.
-- The git history is a detailed history of all the changes made to that file. One of the features of using Github is the ability to view your repository history which are displayed in the Graphs section of your Github repository page.
+- Each repository on GitHub has a unique url so you can easily share.
+- The git history is a detailed history of all the changes made to that file. One of the features of using GitHub is the ability to view your repository history which are displayed in the Graphs section of your GitHub repository page.
 - At this point in the git history of your work-organization-your-name repository there is only one commit.
 
 ### Edit the README.md file
@@ -57,7 +57,7 @@ Follow along with your instructor and perform these steps:
   - In the past month, what are the three main activities you have been doing at work?
   - What are the three most important tools/strategies you use for organizing your work?
   
-*tip*: Notice that you can use markdown syntax. Use [this guide](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for Github's flavor of `Markdown`. Use the "Preview" button to view the formatting of your `README.md` file.
+*tip*: Notice that you can use markdown syntax. Use [this guide](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for GitHub's flavor of `Markdown`. Use the "Preview" button to view the formatting of your `README.md` file.
 
 ### Commit
 - Commit takes a snap shot of your project. Each commit includes a commit message that concisely defines changes made or project state at the time of the commit.
@@ -72,15 +72,15 @@ Now it is time to collaborate with your partner. Navigate to your partner's repo
 1. Make edits and commit
 1. Create a pull request that merges your changes into their repository.
 
-_tip_: Depending on the project there are variations on the above work flow. Often the rules for contributing to a project are outlined in a file called `CONTRIBUTING.md` within the repository. One of the more often used works flows is [Github Flow](https://guides.github.com/introduction/flow/).
+_tip_: Depending on the project there are variations on the above work flow. Often the rules for contributing to a project are outlined in a file called `CONTRIBUTING.md` within the repository. One of the more often used works flows is [GitHub Flow](https://guides.github.com/introduction/flow/).
 
 ### Forking
 - **Forking** creates a copy of a git repository into your own account.
 - Forking allows you to make changes to a repository without affecting the main repository of the project.
-- This is one of the most exciting aspects of Github - you essentially encouraged to copy and play with anyone's code!
+- This is one of the most exciting aspects of GitHub - you essentially encouraged to copy and play with anyone's code!
 
-1. To fork your partner's repository click the "fork" button in the top left hand part of your screen.
-1. When it asks where you would like to fork the repository, choose your user account (if you are new to Github, this should be the only option).
+1. To fork your partner's repository click the "Fork" button in the top left hand part of your screen.
+1. When it asks where you would like to fork the repository, choose your user account (if you are new to GitHub, this should be the only option).
 
 ### Make edits and commit
 - You should now have a copy of your partners repository, `work-organization-their-name`.
@@ -98,11 +98,11 @@ _tip_: Depending on the project there are variations on the above work flow. Oft
 1. Accept this pull request.
 
 ### Explore GitHub features
-Now that you have accepted the pull request. Take a few minutes to explore the git history using the Graphs section of the repository.
+Now that you have accepted the pull request. Take a few minutes to explore the git history using the "Graphs" section of the repository.
 
 ### Extra Exercise *after* class:
 
-- Find a way to practice by contributing more. You don't have to be a great at programming to help with projects. Many projects are in need of spelling or general editing. There is a whole Twitter community that helps beginner Git users find projects to practice using git.
+- Find a way to practice by contributing more. You don't have to be a great at programming to help with projects. Many projects are in need of spelling or general editing. There is a whole Twitter community that helps beginner git users find projects to practice using git.
 
 - Check it out if you want to contribute to more projects: https://twitter.com/yourfirstpr.
 
@@ -143,15 +143,15 @@ _Now you have a copy of_ `rr-version-control-demo` _repository in your account, 
 `forked from Reproducible-Science-Curriculum/rr-version-control-demo`
 
 ### Step 2: Clone
-- In RStudio, go to File, and then New Project
-- Click on Version Control: Checkout a project from a version control repository
-- Click on Git: Clone a project from a repository
+- In RStudio, go to "File", and then "New Project"
+- Click on "Version Control": Checkout a project from a version control repository
+- Click on "Git": Clone a project from a repository
 - Fill in the info:
   - URL: use HTTPS address
   - Create as a subdirectory of: Browse to where you would like to create this folder
 
 ### Step 3: Edit
-- Open the file called gdp-life-expectancy.Rmd and knit.
+- Open the file called gdp-life-expectancy.Rmd and `knit`.
 - Change the analysis_year to another year for which we have data (1952, 1957, 1962, 1967, 1972, 1977, 1982, 1987, 1992, 1997, 2002, 2007), and `knit` again. Examine the output for changes.
 
 ### Step 4: Stage
@@ -165,6 +165,6 @@ _Don't worry about the other files that appear in this pane, we'll get to them i
 - Enter an **informative** commit message, like "Changed analysis year to X", and hit Commit.
 
 ### Step 6: Push
-**push**: When using git push always means pushing commits from your local respository (your computer) to a remote repository (Github).
+**push**: When using git push always means pushing commits from your local respository (your computer) to a remote repository (GitHub).
 - Now push your changes to GitHub by hitting `Push`.
 - Enter login information as needed.
